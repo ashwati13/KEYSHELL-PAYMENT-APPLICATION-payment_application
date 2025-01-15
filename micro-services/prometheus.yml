@@ -6,21 +6,21 @@ scrape_configs:
   # Scraping the frontend (Angular) app running on port 4200
   - job_name: 'frontend'
     static_configs:
-      - targets: ['51.21.149.200:80']
+      - targets: ['13.53.218.39:80']
 
   # Scraping the monitoring service running on port 9090
   - job_name: 'prometheus'
     static_configs:
-      - targets: ['51.21.149.200:9090']
+      - targets: ['13.53.218.39:9090']
 
 
   # Scraping the monitoring service running on port 3000
   - job_name: 'grafana'
     static_configs:
-      - targets: ['51.21.149.200:3000']
+      - targets: ['13.53.218.39:3000']
 
 
   - job_name: 'cadvisor'
 
     static_configs:
-      - targets: ['51.21.149.200:8082']
+      - targets: ['13.53.218.39:8082']
